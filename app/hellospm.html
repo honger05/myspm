@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <link rel="stylesheet" href="../sea-modules/bui/1.0.0/css/bui.css"/>
+  <link rel="stylesheet" href="../sea-modules/bui/1.0.0/css/dpl.css"/>
 </head>
 <body>
   <div style="text-align:center;font-size:48px;color:#999;"> Press the space key !</div>
@@ -11,14 +13,8 @@
    ==========================================================
   -->
   <script src="../sea-modules/seajs/2.3.0/sea-debug.js"></script>
+  <script src="../sea-config.js"></script>
   <script>
-    seajs.config({
-      base:'../sea-modules/',
-      alias:{
-        'jquery':'jquery/jquery/1.10.1/jquery.js',
-        "util": '../../util/1.0.0/util.js'
-      }
-    });
     if(location.href.indexOf("?dev")>0){
       seajs.use("../static/hellospm/src/main");
     }else{

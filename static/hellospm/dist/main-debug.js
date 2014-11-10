@@ -1,6 +1,6 @@
-define("myspm/hellospm/1.0.0/main-debug", [ "jquery-debug", "myspm/hellospm/1.0.0/hello-debug", "util-debug", "myspm/hellospm/1.0.0/handle-text-debug" ], function(require) {
-    var $ = require("jquery-debug");
-    var Hello = require("./hello-debug");
+define("myspm/hellospm/1.0.0/main-src", [ "jquery-src", "myspm/hellospm/1.0.0/hello-src", "util-src", "myspm/hellospm/1.0.0/handle-text-src" ], function(require) {
+    var $ = require("jquery-src");
+    var Hello = require("./hello-src");
     $(document).keypress(function(ev) {
         if (ev.which == 32) {
             new Hello();
@@ -8,10 +8,10 @@ define("myspm/hellospm/1.0.0/main-debug", [ "jquery-debug", "myspm/hellospm/1.0.
     });
 });
 
-define("myspm/hellospm/1.0.0/hello-debug", [ "jquery-debug", "util-debug", "myspm/hellospm/1.0.0/handle-text-debug" ], function(require, exports, module) {
-    var $ = require("jquery-debug");
-    var random = require("util-debug").random;
-    var handleText = require("myspm/hellospm/1.0.0/handle-text-debug");
+define("myspm/hellospm/1.0.0/hello-src", [ "jquery-src", "util-src", "myspm/hellospm/1.0.0/handle-text-src" ], function(require, exports, module) {
+    var $ = require("jquery-src");
+    var random = require("util-src").random;
+    var handleText = require("myspm/hellospm/1.0.0/handle-text-src");
     function Hello() {
         this.render();
         this.bindAction();
@@ -29,9 +29,9 @@ define("myspm/hellospm/1.0.0/hello-debug", [ "jquery-debug", "util-debug", "mysp
     module.exports = Hello;
 });
 
-define("myspm/hellospm/1.0.0/handle-text-debug", [ "jquery-debug", "util-debug" ], function(require, exports, module) {
-    var $ = require("jquery-debug");
-    var random = require("util-debug").random;
+define("myspm/hellospm/1.0.0/handle-text-src", [ "jquery-src", "util-src" ], function(require, exports, module) {
+    var $ = require("jquery-src");
+    var random = require("util-src").random;
     function handleText(text) {
         var min = random(30, 70);
         var max = random(50, 120);

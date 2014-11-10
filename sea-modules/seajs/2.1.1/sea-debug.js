@@ -880,7 +880,7 @@ data.preload = (function() {
 // data.paths - An object containing path shorthands in module id
 // data.vars - The {xxx} variables in module id
 // data.map - An array containing rules to map module uri
-// data.debug - Debug mode. The default value is false
+// data.src - Debug mode. The default value is false
 
 seajs.config = function(configData) {
 

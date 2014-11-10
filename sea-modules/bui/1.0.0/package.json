@@ -1,0 +1,11 @@
+{
+  "name": "bui",
+  "version": "1.0.0",
+
+  "spm": {
+    "alias": {
+      "jquery": "jquery"
+    },
+    "output": ["bui.js"]
+  }
+}

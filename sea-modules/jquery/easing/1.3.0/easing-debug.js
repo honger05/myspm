@@ -1,5 +1,5 @@
-define("jquery/easing/1.3.0/easing-debug", ["jquery-debug"], function(require) {
-  var jQuery = require("jquery-debug"); 
+define("jquery/easing/1.3.0/easing-src", ["jquery-src"], function(require) {
+  var jQuery = require("jquery-src");
 /* ============================================================
  * jQuery Easing v1.3 - http://gsgd.co.uk/sandbox/jquery/easing/
  *
