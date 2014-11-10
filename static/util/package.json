@@ -1,0 +1,12 @@
+{
+  "family": "myspm",
+  "name": "util",
+  "version": "1.0.0",
+
+  "spm": {
+    "alias": {
+      "jquery": "jquery"
+    },
+    "output": ["util.js"]
+  }
+}

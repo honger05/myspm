@@ -1,0 +1,12 @@
+{
+  "family": "myspm",
+  "name": "hellospm",
+  "version": "1.0.0",
+
+  "spm": {
+    "alias": {
+      "jquery": "jquery"
+    },
+    "output": ["main.js"]
+  }
+}
