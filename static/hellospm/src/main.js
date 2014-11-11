@@ -12,15 +12,16 @@ define(function(require){
     }
   })
 
+  //测试zui
+  var Overlay = require('./zui/overlay');
+  var o = new Overlay();
+  o.show();
 
+  //测试bui
   var Overlay = require('bui/overlay');
-  var Grid = require('bui/grid');
-  var Data = require('bui/data');
-
   var Message = Overlay.Message;
-
-  Message.Alert('这只是简单的提示信息',function(){
-
+  Message.Alert('这是拿来测试bui的！',function(){
+    o.hide();
   },'info');
 
 });

@@ -1,8 +1,7 @@
 seajs.config({
   base: '../sea-modules/',
   alias: {
-    'jquery': 'jquery/jquery/1.10.1/jquery.js',
-    "util": '../../util/1.0.0/util.js'
+    'jquery': 'jquery/jquery/1.10.1/jquery.js' //字母开头相对于base路径
   },
   paths: {
     'bui': 'bui/1.0.1'

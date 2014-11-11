@@ -1,6 +1,6 @@
 define(function(require, exports, module) {
   var $ = require('jquery');
-  var random = require("util").random;
+  var random = require("./util/util").random;
   var handleText= require('./handle-text');
   function Hello(){
     this.render();

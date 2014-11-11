@@ -1,6 +1,6 @@
 define(function(require, exports, module) {
   var $ = require('jquery');
-  var random = require('util').random;
+  var random = require('./util/util').random;
   function handleText(text){
     var min = random(30,70);
     var max = random(50,120);
