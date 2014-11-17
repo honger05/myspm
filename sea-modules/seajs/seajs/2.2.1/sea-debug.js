@@ -79,16 +79,16 @@ seajs.off = function(name, callback) {
 
 // Emit event, firing all bound callbacks. Callbacks receive the same
 // arguments as `emit` does, apart from the event name
-var emit = seajs.emit = function(name) {
+var emit = seajs.emit = function(name, data) {
   var list = events[name], fn
 
   if (list) {
     // Copy callback lists to prevent modification
     list = list.slice()
-    var args = Array.prototype.slice.call(arguments, 1);
+
     // Execute event callbacks
     while ((fn = list.shift())) {
-      fn.apply(null, args);
+      fn(data)
     }
   }
 
@@ -524,7 +524,7 @@ Module.prototype.load = function() {
 
   // Emit `load` event for plugins such as combo plugin
   var uris = mod.resolve()
-  emit("load", uris, mod)
+  emit("load", uris)
 
   var len = mod._remain = uris.length
   var m
@@ -906,7 +906,7 @@ data.preload = (function() {
 // data.paths - An object containing path shorthands in module id
 // data.vars - The {xxx} variables in module id
 // data.map - An array containing rules to map module uri
-// data.src - Debug mode. The default value is false
+// data.debug - Debug mode. The default value is false
 
 seajs.config = function(configData) {
 
